@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn" onclick="btnclick()">click me</button>
+    <script>
+function btnclick(){
+   // alert("btn was click")
+   console.log("btn was clicked");
+}
+btn.addEventListener(`mouseover`, function(){
+    console.log("mouse over is activated");
+});
+btn.addEventListener(`mouseover`, function(){
+    console.log("mouse out is activated");
+});
+    </script>
+</body>
+</html>

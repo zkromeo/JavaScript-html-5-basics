@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color{
+background-color: yellow;
+color: blue;
+        }
+        .dim{
+            border: ipx solid red;
+            padding: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" class="color dim">
+        <p>this is a dummy text</p>
+    </div>
+    <script>
+        let box =document.getElementById("box");
+    //console.log(box.className);or
+   // console.log(box.classList);
+   let width =box.offsetWidth;
+   let height = box.offsetHeight;
+   console.log(width);
+   console.log(height);
+    </script>
+</body>
+</html>

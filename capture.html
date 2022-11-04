@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 100px;
+            background-color: cornsilk;
+        }
+
+        #myDiv {
+            padding: 50px;
+            background-color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="myDiv">
+        <button id="btn">click me</button>
+    </div>
+    <script>
+        let d = document.getElementById("myDiv");
+        let b = document.getElementById("btn");
+
+        b.addEventListener('click', btnclicked, );
+       d.addEventListener('click',divclicked, );
+        document.body.addEventListener('click', bodyclicked,);
+        function btnclicked(event) {
+            console.log("button clicked...");
+            event.stopPropagation();
+        }
+        function divclicked() {
+            console.log("div clicked...");
+        }
+        function bodyclicked() {
+            console.log("body clicked...");
+        }
+    </script>
+</body>
+
+</html>
